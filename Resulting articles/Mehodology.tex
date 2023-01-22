@@ -1,0 +1,32 @@
+\documentclass[doc,norsk]{apa7}
+\usepackage[style=apa]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+
+
+\DeclareLanguageMapping{norsk}{norsk-apa}
+
+\bibliography{references.bib}
+
+\title{Metodologi for replikasjonsprosjekt}
+\author{Ole Fredrik Borgundvåg Berg}
+\affiliation{NTNU}
+
+\begin{document}
+
+\maketitle
+
+Dette er et replikasjonsprosjekt som er basert på et tilsvarende prosjekt som ble gjort av Ulrich Schimmack, der man prøvde å finne i hvilken grad vitenskaplige funn ved ulike amerikanske universiteter kunne replikeres, inkludert estimert replikasjonsrate på enkeltforskere \parencite{amerikansk-ranking}. Siden faktisk replikasjon er dyrt, så laget heller han med flere en modell som finner estimert replikasjonrate basert på p-verdier i artiklene til forskerene, som er implementert i biblioteket \guillemotleft z-curve\guillemetright\ til R \parencite{z-curve-modell, z-curve-implementasjon}.
+
+\subsection{Finne forskere og artikler}
+For å finne artikler og forskere ble Cristin APIet brukt \parencite{cristin-api}. APIet gjør det enkelt både å finne ut hvilke forskere som er tilknyttet hvilke institutt og hvilke artikler som er skrevet av hvilke forskere. Artiklene som er brukt i dette prosjektet er de publikasjonene som har \texttt{category.code = "ARTICLE"} i APIet. Selve nedlastingen av artiklene skjedde også ved programmerisk, men ikke ved hjelp av Cristin. Dette kan føre til at noen av artiklene i Cristin ikke kom med i dette prosjektet pga. manglende tilgang.
+
+\subsection{Ekstrahering av z-verdier}
+Siden p-verdier ofte er på formen $p < 0.05$ er det vanskelig å lage et histogram ut fra disse. Derfor brukes kun statistiske tester der man har test-statistikken tilgjengelig. Deretter konverteres den til en z-verdi med tilsvarende p-verdi. Selve ekstraheringen av de statistiske testene ble gjort ved hjelp av verktøyet JATSdecoder og funksjonen \texttt{get.stats()} \parencite{jatsdecoder}. Skal sies at z-curve også har denne funksjonaliteten, men ved egen testing og i følge \textcite{jatsdecoder} sine forsøk så vil JATSdecoder hente ut en større andel av de statistiske testene i artiklene.
+
+\subsection{Modellering av replikasjonsrate og visualisering}
+For å finne forventet replikasjonrate og for å lage grafer for visualisering ble de statistiske testene som ble hentet ut ved hjelp av JATSdecoder puttet inn i z-curve. Den både regnet ut forventet replikasjonrate og laget graf over de tilsvarene z-verdiene for de ulike statistikkene i artiklene. For mer informasjon om hvordan z-curve fungerer, se \textcite{z-curve-modell} og \textcite{z-curve-implementasjon}. 
+ 
+\printbibliography
+
+\end{document}
