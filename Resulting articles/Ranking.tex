@@ -18,10 +18,10 @@
 
 \maketitle
 
-Replikasjonsgraden i psykologi er lav. Den mest kjente studien på området kommer fra Open Science Collaboration, som fant at når de prøvde å replikere 97 ulike psykologistuder, så klarte de kun å få signifikante resultater 36\% av replikasjonene \parencite{open-replikasjon}. Videre var effektstørrelsen i replikasjonene omtrent halvparten av de effektstørrelsen i de opprinnelige studiene. En annen studie med kun 28 replikasjoner fant en replikasjonsrate på 54\% \parencite{replikasjonsrate-2}. Det er mange ulike grunner til at replikasjonraten er lav, men en del av det kan skyldes ting som publikasjonsbias, p-hacking og liknende. Ved å se på p-verdiene i artiklene til ulike forkere kan man prøve å finne i hvilken grad p-hacking forekommer og man kan prøve å estimere i hvilken grad resultatene er forventet å replikere. I denne artikkelen skal jeg se på p-verdiene til ulike forskere ved Institutt for Psykologi. 
+Replikasjonsgraden i psykologi er lav. Den mest kjente studien på området kommer fra Open Science Collaboration, som fant at når de prøvde å replikere 97 ulike psykologistuder, så klarte de kun å få signifikante resultater 36\% av replikasjonene \parencite{open-replikasjon}. Videre var effektstørrelsen i replikasjonene omtrent halvparten av de effektstørrelsen i de opprinnelige studiene. En annen studie med kun 28 replikasjoner fant en replikasjonsrate på 54\% \parencite{replikasjonsrate-2}. Det er mange ulike grunner til at replikasjonraten er lav, men en del av det kan skyldes ting som publikasjonsbias, p-hacking og liknende. Ved å se på p-verdiene i artiklene til ulike forskere kan man prøve å finne i hvilken grad p-hacking forekommer og man kan prøve å estimere i hvilken grad resultatene er forventet å replikere. I denne artikkelen skal jeg se på p-verdiene til ulike forskere ved Institutt for Psykologi. 
 
 \subsection{Hvoran lese grafene}
-Grafene er histogrammer, der dataene er z-verdier fra artiklene de har publisert. Om andre statistiske tester enn z-test er brukt, er test-statistikken omgjort til en z-verdi ved å ta z-verdien med samme p-verdi. I grafen er det en rød linje som går ved $z=1.96$. Dette er fordi en z-verdi på 1.96 eller høyere fører til en p-verdi på 0.05 eller lavere. Med andre ord, signifikante resultater er til høyre for linja og nullresultater er til venstre for linja. Det er tre tall i grafen. \guillemetleft Observed discovery rate\guillemetright\ (ODR) er andelen av de publiserte resultatene som er signifikante. \guillemetleft Expected discovery rate\guillemetright\ (EDR) er den forventede andelen signifikante resultater du vil få om du kjører alle forsøkene til forskeren på nytt. Man skulle kanskje tro at dette ville være det samme som ODR, men forskjellen er at EDR tar hensyn til seleksjonseffekter. Med spesifikt, er ODR basert på de publiserte resultatene, mens EDR tar baserer seg på alle resultatene, også de nullresultatene modellen mener finnes men ikke er blitt publisert (se avsnittet om publikasjonsbias). \guillemotleft Expected replication rate\guillemetright\ (ERR) er forventet andel signifikante resultater man vil få dersom man replikerer alle de signifikante resultatene på nytt. Det er også det som tilsvarer \guillemetleft replikasjonrate\guillemetright\ slik det er referert i første avsnitt. Mer detaljer om disse verdiene kan man finne i \textcite{z-curve-implementasjon}.
+Grafene er histogrammer, der dataene er z-verdier fra artiklene de har publisert. Om andre statistiske tester enn z-test er brukt, er test-statistikken omgjort til en z-verdi ved å ta z-verdien med samme p-verdi. I grafen er det en vertikal linje ved $z=1.96$. Dette er fordi en z-verdi på 1.96 eller høyere fører til en p-verdi på 0.05 eller lavere. Med andre ord, signifikante resultater er til høyre for linja og nullresultater er til venstre for linja. Det er tre tall i grafen. \guillemetleft Observed discovery rate\guillemetright\ (ODR) er andelen av de publiserte resultatene som er signifikante. \guillemetleft Expected discovery rate\guillemetright\ (EDR) er den forventede andelen signifikante resultater du vil få om du kjører alle forsøkene til forskeren på nytt. Man skulle kanskje tro at dette ville være det samme som ODR, men forskjellen er at EDR tar hensyn til seleksjonseffekter. Med spesifikt, er ODR basert på de publiserte resultatene, mens EDR tar baserer seg på alle resultatene, også de nullresultatene modellen mener finnes men ikke er blitt publisert (se avsnittet om publikasjonsbias). \guillemotleft Expected replication rate\guillemetright\ (ERR) er forventet andel signifikante resultater man vil få dersom man replikerer alle de signifikante resultatene på nytt. Det er også det som tilsvarer \guillemetleft replikasjonrate\guillemetright\ slik det er referert i første avsnitt. Mer detaljer om disse verdiene kan man finne i \textcite{z-curve-implementasjon}.
 
 \subsection{Alexander Olsen}
 \begin{figure}[h!]
@@ -72,7 +72,7 @@ Beate Wold Hygen har en diskontinuetet ved $z=1.96$, men her med motsatt fortegn
     \includegraphics[width=\textwidth]{images/Christian Kløckner.png}
     \caption{z-verdier for Christian Kløckner}
 \end{figure}
-Christian Kløckner har en solid z-verdi-graf. Ingen diskontinuetet og mange null-resultater. En høy forventet replikasjonrate på hele 89\% er også til å legge merke til.
+Christian Kløckner har en solid z-verdi-graf. Ingen diskontinuetet og mange nullresultater. En høy forventet replikasjonrate på hele 87\% er også til å legge merke til.
 
 \subsection{Dawn Marie Behne}
 \begin{figure}[h!]
@@ -104,7 +104,7 @@ Frederick Van der Weel har den største diskontinueteten av alle i sin z-verdi-g
     \includegraphics[width=\textwidth]{images/Gerit Pfuhl.png}
     \caption{z-verdier for Gerit Pfuhl}
 \end{figure}
-Gerit Pfuhl har klart å unngå diskontinueteter i sin graf og har mange null-resultater. En forventet replikasjonrate på 67\% er ganske grei. Man begynner dog å se konturene av en gausskurve i z-verdi-grafen hennes, noe som gjør at man kan begynne å lure på om det er nullhypotesen som er i grafen her.
+Gerit Pfuhl har klart å unngå diskontinueteter i sin graf og har mange nullresultater. En forventet replikasjonrate på 67\% er ganske grei. Man begynner dog å se konturene av en gausskurve i z-verdi-grafen hennes, noe som gjør at man kan begynne å lure på om det er nullhypotesen som er i grafen her.
 
 \subsection{Hermundur Sigmundsson}
 \begin{figure}[h!]
@@ -112,7 +112,7 @@ Gerit Pfuhl har klart å unngå diskontinueteter i sin graf og har mange null-re
     \includegraphics[width=\textwidth]{images/Hermundur Sigmundsson.png}
     \caption{z-verdier for Hermundur Sigmundsson}
 \end{figure}
-Hermundur Sigmundsson har noe diskontinuetet ved $z=1.96$, men det er også en god del null-resultater. Den forventede replikasjonraten på 70\% er også ganske OK.
+Hermundur Sigmundsson har noe diskontinuetet ved $z=1.96$, men det er også en god del nullresultater. Den forventede replikasjonraten på 70\% er også ganske OK.
 
 \subsection{Ida Emilia Brunner}
 \begin{figure}[h!]
@@ -120,7 +120,7 @@ Hermundur Sigmundsson har noe diskontinuetet ved $z=1.96$, men det er også en g
     \includegraphics[width=\textwidth]{images/Ida Emilia Brunner.png}
     \caption{z-verdier for Ida Emilia Brunner}
 \end{figure}
-Ida Emilia Brunner har en ganske høy forventet replikasjonrate på 79\% og litt diskontinuetet ved $z=1.96$, men det er også en god del null-resultater.
+Ida Emilia Brunner har en ganske høy forventet replikasjonrate på 79\% og litt diskontinuetet ved $z=1.96$, men det er også en god del nullresultater.
 
 \subsection{Ingvild Saksvik-Lehouillier}
 \begin{figure}[h!]
@@ -176,7 +176,7 @@ Magnus Alm har en helt OK z-verdi-graf. Litt få z-verdier her, noe som gjør de
     \includegraphics[width=\textwidth]{images/Matthias Mittner.png}
     \caption{z-verdier for Matthias Mittner}
 \end{figure}
-Matthias Mittner har en ganske flat z-verdi-graf. Ingen store diskontinueteter, men kan se ut som nivået på nullresultater er noe laver enn signifikante resultater. Mulig noen manglende nullresultater. Forventet replikasjonrate er på 77\% som er ganske bra.
+Matthias Mittner har en ganske flat z-verdi-graf. Ingen store diskontinueteter, men kan se ut som nivået på nullresultater er noe lavere enn hos signifikante resultater. Mulig noen manglende nullresultater. Forventet replikasjonrate er på 77\% som er ganske bra.
 
 \subsection{Mons Bendixen}
 \begin{figure}[h!]
@@ -324,7 +324,7 @@ Vera Skalicka har ikke så mange resultater så vanskelig å si så mye ut fra g
 Xi Chu har en noe lav forventet replikasjonsrate på 63\%. Det er noe diskontinuetet ved $z=1.96$, selv om det også er publisert en god del nullresultater.
 
 \subsection{En kommentar om forventet replikasjonrate}
-Som vi så i første avsnitt er den empiriske replikasjonsraten i psykologi lav (et sted rundt 50\% eller mindre). Likevel har de aller fleste som er nevnt ovenfor her en replikasjonrate på greit over 50\%! Derfor kan det være verdt å merke seg at sammenligning mellom forventet replikasjonsrate og empirisk replikasjonsrate tilsier at forventet replikasjonrate slik som den er regnet ut her er ofte høyere enn replikasjonraten i praksis, så det er fort at forskerne over vil replikeres sjeldnere enn det statistikken over tilsier \parencite{z-curve-implementasjon, z-curve-mot-empiri}. \textcite{arp} bruker et gjennomsnitt mellom ERR og EDR kalt \guillemetleft Actual Replicability Prediction\guillemetright\ (ARP) som sin beste prediksjon på utfall av replikasjonsstudier. Som man kan se fra grafene over vil et ARP være noe lavere enn ERR som er brukt som forventet replikasjonrate i denne artikkelen.
+Som vi så i første avsnitt er den empiriske replikasjonsraten i psykologi lav (et sted rundt 50\% eller mindre). Likevel har de aller fleste som er nevnt ovenfor her en forventet replikasjonrate på greit over 50\%! Derfor kan det være verdt å merke seg at sammenligning mellom forventet replikasjonsrate og empirisk replikasjonsrate tilsier at forventet replikasjonrate slik som den er regnet ut her er ofte høyere enn replikasjonraten i praksis, så det er fort at forskerne over vil replikeres sjeldnere enn det forventet replikasjonsrate over tilsier \parencite{z-curve-implementasjon, z-curve-mot-empiri}. \textcite{arp} bruker et gjennomsnitt mellom ERR og EDR kalt \guillemetleft Actual Replicability Prediction\guillemetright\ (ARP) som sin beste prediksjon på utfall av replikasjonsstudier. Som man kan se fra grafene over vil ARP være noe lavere enn ERR som er brukt som forventet replikasjonrate i denne artikkelen.
 
 \subsection{Så hvem vant?}
 Det var mange her som har gjort en god innsats i å skulle bli instituttets beste p-hacker. Likevel var det ingen som hadde en så god diskontinuetet på $z=1.96$ som Frederikus Van der Weel. Han vant dermed konkurransen om å være instituttets beste p-hacker. Gratulerer!
@@ -334,7 +334,7 @@ Det var mange her som har gjort en god innsats i å skulle bli instituttets best
 Mangler vi din yndlingsforsker (deg selv?) i denne artikkelen? Det er i såfall fordi vi ikke hadde nok p-verdier til å kunne få noe nyttig ut av en slik graf.
 
 \subsection{Disclaimer}
-P-verdiene ble hentet ut ved hjelp av et dataprogram, det fører til at noe av p-verdiene fra artikler mangler siden programmet ikke klarer å hente ut alle p-verdiene. Det kan være at noen er hentet ut feil. En diskontinuetet i en z-verdi-graf trenger ikke å bety at man har gjort noe uetisk i forskningen sin eller at man har drevet med p-hacking, men heller at man har større sjanse for å nevne statistiske resultater på signifikante resultater, mens nullresultater beskrives kvalitativt og vil dermed ikke bli regnet med her. Den forventede replikasjonraten er en statistisk verdi utregnet fra p-verdiene, og er ikke sikkert samsvarer med en faktisk replikasjonrate på studiene. Når forventet replikasjonrate er nevnt hos forskere i artikkelen er det fokus på den estimerte verdien, men konfidensintervallet er stort. Mange med \guillemetleft gode\guillemetright\ forventede replikasjonrater har også ganske \guillemetleft dårlige\guillemetright\ forventede replikasjonrater i 95\% konfidensintervallet sitt og vica versa. Så den kvalitativte beskrivelsen av replikasjonratene i teksten baserer seg ofte ikke på statistisk signifikante forskjeller. Om noen av forskerene har gitt ut få artikler kan også det føre til at z-verdi-grafen ikke er særlig god.
+P-verdiene ble hentet ut ved hjelp av et dataprogram. Det fører til at noe av p-verdiene fra artikler mangler siden programmet ikke klarer å hente ut alle p-verdiene. Det kan være at noen er hentet ut feil. En diskontinuetet i en z-verdi-graf trenger ikke å bety at man har gjort noe uetisk i forskningen sin eller at man har drevet med p-hacking, men heller at man har større sjanse for å nevne statistiske resultater på signifikante resultater, mens nullresultater beskrives kvalitativt og vil dermed ikke bli regnet med her. Den forventede replikasjonraten er en statistisk verdi utregnet fra p-verdiene, og er ikke sikkert samsvarer med en faktisk replikasjonrate på studiene. Når forventet replikasjonrate er nevnt hos forskere i artikkelen er det fokus på den estimerte verdien, men konfidensintervallet er stort. Mange med \guillemetleft gode\guillemetright\ forventede replikasjonrater har også ganske \guillemetleft dårlige\guillemetright\ forventede replikasjonrater i 95\% konfidensintervallet sitt og vica versa. Så den kvalitativte beskrivelsen av replikasjonratene i teksten baserer seg ofte ikke på statistisk signifikante forskjeller. Om noen av forskerene har gitt ut få artikler kan også det føre til at z-verdi-grafen ikke er særlig god.
 
 \printbibliography
 
