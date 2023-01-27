@@ -6,7 +6,7 @@ Downloader/downloader.py
 Papers/*
 Xpdf
 Resulting articles/Methodology.*
-#Resulting articles/Ranking.*
+Resulting articles/Ranking.*
 !Resulting articles/Results.pdf
 !Resulting articles/Methodology.pdf
 !Resulting articles/Ranking.tex
