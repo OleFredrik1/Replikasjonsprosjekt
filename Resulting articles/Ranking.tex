@@ -17,11 +17,12 @@
 \begin{document}
 
 \maketitle
+%\setlength{\parindent}{20pt}
 
-Replikasjonsgraden i psykologi er lav. Den mest kjente studien på området kommer fra Open Science Collaboration, som fant at når de prøvde å replikere 97 ulike psykologistudier, så klarte de kun å få signifikante resultater 36\% av replikasjonene \parencite{open-replikasjon}. Videre var effektstørrelsen i replikasjonene omtrent halvparten av de effektstørrelsen i de opprinnelige studiene. En annen studie med kun 28 replikasjoner fant en replikasjonsrate på 54\% \parencite{replikasjonsrate-2}. Det er mange ulike grunner til at replikasjonsraten er lav, men en del av det kan skyldes ting som publikasjonsbias, p-hacking og liknende. Ved å se på p-verdiene i artiklene til ulike forskere kan man prøve å finne i hvilken grad p-hacking forekommer, og man kan prøve å estimere i hvilken grad resultatene er forventet å replikere. I denne artikkelen skal jeg se på p-verdiene til ulike forskere ved Institutt for Psykologi. 
+Replikasjonsgraden i psykologi er lav. Den mest kjente studien på området kommer fra Open Science Collaboration, som fant at når de prøvde å replikere 97 ulike psykologistudier, så klarte de kun å få signifikante resultater i 36\% av replikasjonene \parencite{open-replikasjon}. Videre var effektstørrelsen i replikasjonene omtrent halvparten av effektstørrelsen i de opprinnelige studiene. En annen studie med kun 28 replikasjoner fant en replikasjonsrate på 54\% \parencite{replikasjonsrate-2}. Det er mange ulike grunner til at replikasjonsraten er lav, men en del av det kan skyldes ting som publikasjonsbias, p-hacking og liknende. Ved å se på p-verdiene i artiklene til ulike forskere kan man prøve å finne i hvilken grad p-hacking forekommer, og man kan prøve å estimere i hvilken grad resultatene er forventet å replikere. I denne artikkelen skal jeg se på p-verdiene til ulike forskere ved Institutt for Psykologi. 
 
 \subsection{Hvordan lese grafene}
-Grafene er histogrammer, der dataene er z-verdier fra artiklene de har publisert. Om andre statistiske tester enn z-test er brukt, er test-statistikken omgjort til en z-verdi ved å ta z-verdien med samme p-verdi. I grafen er det en vertikal linje ved $z=1.96$. Dette er fordi en z-verdi på 1.96 eller høyere fører til en p-verdi på 0.05 eller lavere. Med andre ord, signifikante resultater er til høyre for linja og nullresultater er til venstre for linja. Det er tre tall i grafen. \guillemetleft Observed discovery rate\guillemetright\ (ODR) er andelen av de publiserte resultatene som er signifikante. \guillemetleft Expected discovery rate\guillemetright\ (EDR) er den forventede andelen signifikante resultater du vil få om du kjører alle forsøkene til forskeren på nytt. Man skulle kanskje tro at dette ville være det samme som ODR, men forskjellen er at EDR tar hensyn til seleksjonseffekter. Med spesifikt, er ODR basert på de publiserte resultatene, mens EDR tar baserer seg på alle resultatene, også de nullresultatene modellen mener finnes men ikke er blitt publisert (se avsnittet om publikasjonsbias). \guillemotleft Expected replication rate\guillemetright\ (ERR) er forventet andel signifikante resultater man vil få dersom man replikerer alle de signifikante resultatene på nytt. Det er også det som tilsvarer \guillemetleft replikasjonsrate\guillemetright\ slik det er referert i første avsnitt. Mer detaljer om disse verdiene kan man finne i \textcite{z-curve-implementasjon}.
+Grafene er histogrammer, der dataene er z-verdier fra artiklene de har publisert. Om andre statistiske tester enn z-test er brukt, er test-statistikken omgjort til en z-verdi ved å ta z-verdien med samme p-verdi. I grafen er det en vertikal linje ved $z=1.96$. Dette er fordi en z-verdi på 1.96 eller høyere fører til en p-verdi på 0.05 eller lavere. Med andre ord, signifikante resultater er til høyre for linja og nullresultater er til venstre for linja. Det er tre tall i grafen. \guillemetleft Observed discovery rate\guillemetright\ (ODR) er andelen av de publiserte resultatene som er signifikante. \guillemetleft Expected discovery rate\guillemetright\ (EDR) er den forventede andelen signifikante resultater du vil få om du kjører alle forsøkene til forskeren på nytt. Man skulle kanskje tro at dette ville være det samme som ODR, men forskjellen er at EDR tar hensyn til seleksjonseffekter. Mer spesifikt er ODR basert på de publiserte resultatene, mens EDR baserer seg på alle resultatene, også de nullresultatene modellen mener finnes, men ikke er blitt publisert (se avsnittet om publikasjonsbias). \guillemotleft Expected replication rate\guillemetright\ (ERR) er forventet andel signifikante resultater man vil få dersom man replikerer alle de signifikante resultatene på nytt. Det er også det som tilsvarer \guillemetleft replikasjonsrate\guillemetright\ slik det er referert i første avsnitt. Mer detaljer om disse verdiene kan man finne i \textcite{z-curve-implementasjon}.
 
 \subsection{Alexander Olsen}
 \begin{figure}[h!]
@@ -29,6 +30,7 @@ Grafene er histogrammer, der dataene er z-verdier fra artiklene de har publisert
     \includegraphics[width=\textwidth]{images/Alexander Olsen.png}
     \caption{z-verdier for Alexander Olsen}
 \end{figure}
+
 Alexander Olsen har en klar diskontinuitet ved $z=1.96$, noe som tyder på at det kan være en del publikasjonsbias eller p-hacking her. En forventet replikasjonsrate på 68\% er ganske OK for psykologi.
 
 \subsection{Andrea Melanie Kessler}
@@ -37,6 +39,7 @@ Alexander Olsen har en klar diskontinuitet ved $z=1.96$, noe som tyder på at de
     \includegraphics[width=\textwidth]{images/Andrea Melanie Kessler.png}
     \caption{z-verdier for Andrea Melanie Kessler}
 \end{figure}
+
 Andrea Melanie Kessler merker seg ved å ha en høy forventet replikasjonsrate på 90\%. Hun har heller ingen diskontinuitet ved $z=1.96$ noe som forteller oss at p-hacking eller publiseringsbias er usannsynlig.
 
 \subsection{Audrey Van der Meer}
@@ -45,6 +48,7 @@ Andrea Melanie Kessler merker seg ved å ha en høy forventet replikasjonsrate p
     \includegraphics[width=\textwidth]{images/Audrey Van der Meer.png}
     \caption{z-verdier for Audrey Van der Meer}
 \end{figure}
+
 Audrey Van der Meer har noe diskontinuitet ved $z=1.96$, noe som kan tyde på noe p-hacking/publiseringsbias. Hun har også en forventet replikasjonsrate på 70\%, noe som er ganske OK.
 
 % Evt: finn ut om vi skal ha med. Må i så fall legge til også hos andre med tilsvarende problemer.
@@ -56,6 +60,7 @@ Audrey Van der Meer har noe diskontinuitet ved $z=1.96$, noe som kan tyde på no
     \includegraphics[width=\textwidth]{images/Audun Havnen.png}
     \caption{z-verdier for Audun Havnen}
 \end{figure}
+
 Audun Havnen har en noe lav replikasjonsrate på bare 58\%, samt en del diskontinuitet ved $z=1.96$. Dette tyder på noe p-hacking/publiseringsbias.
 
 \subsection{Beate Wold Hygen}
@@ -64,7 +69,8 @@ Audun Havnen har en noe lav replikasjonsrate på bare 58\%, samt en del diskonti
     \includegraphics[width=\textwidth]{images/Beate Wold Hygen.png}
     \caption{z-verdier for Beate Wold Hygen}
 \end{figure}
-Beate Wold Hygen har en diskontinuitet ved $z=1.96$, men her med motsatt fortegn! Ingen p-hacking her, om noe så tyder ting på det motsatte. En forventet replikasjonsrate på 66\% er også ganske bra.
+
+Beate Wold Hygen har en diskontinuitet ved $z=1.96$, men her med motsatt fortegn! Ingen p-hacking her, om noe så er det tilsynelatende det motsatte. En forventet replikasjonsrate på 66\% er også ganske bra.
 
 \subsection{Christian Kløckner}
 \begin{figure}[h!]
@@ -72,7 +78,8 @@ Beate Wold Hygen har en diskontinuitet ved $z=1.96$, men her med motsatt fortegn
     \includegraphics[width=\textwidth]{images/Christian Kløckner.png}
     \caption{z-verdier for Christian Kløckner}
 \end{figure}
-Christian Kløckner har en solid z-verdi-graf. Ingen diskontinuitet og mange nullresultater. En høy forventet replikasjonsrate på hele 87\% er også til å legge merke til.
+
+Christian Kløckner har en solid z-verdi-graf. Ingen diskontinuitet og mange nullresultater. En høy forventet replikasjonsrate på hele 87\% er også verdt å legge merke til.
 
 \subsection{Dawn Marie Behne}
 \begin{figure}[h!]
@@ -80,6 +87,7 @@ Christian Kløckner har en solid z-verdi-graf. Ingen diskontinuitet og mange nul
     \includegraphics[width=\textwidth]{images/Dawn Marie Behne.png}
     \caption{z-verdier for Dawn Marie Behne}
 \end{figure}
+
 Dawn Marie Behne har ingen diskontinuitet ved $z=1.96$ og en helt OK forventet replikasjonsrate på 72\%. Ingen tegn til p-hacking eller publiseringsbias.
 
 \subsection{Frederick Anyan}
@@ -88,6 +96,7 @@ Dawn Marie Behne har ingen diskontinuitet ved $z=1.96$ og en helt OK forventet r
     \includegraphics[width=\textwidth]{images/Frederick Anyan.png}
     \caption{z-verdier for Frederick Anyan}
 \end{figure}
+
 Frederick Anyan har en helt OK z-verdi-graf. Ingen store diskontinuiteter og en forventet replikasjonsrate på 73\%.
 
 \subsection{Frederikus Van der Weel}
@@ -96,7 +105,8 @@ Frederick Anyan har en helt OK z-verdi-graf. Ingen store diskontinuiteter og en 
     \includegraphics[width=\textwidth]{images/Frederikus Van der Weel.png}
     \caption{z-verdier for Frederikus Van der Weel}
 \end{figure}
-Frederick Van der Weel har den største diskontinuiteten av alle i sin z-verdi-graf. Det snek seg dog med noen få nullresultater innimellom. Forventet replikasjonsraten på 70\% er ganske OK, da.
+
+Frederick Van der Weel har den største diskontinuiteten av alle i sin z-verdi-graf. Det snek seg dog med noen få nullresultater innimellom. Forventet replikasjonsrate på 70\% er ganske OK.
 
 \subsection{Gerit Pfuhl}
 \begin{figure}[h!]
@@ -104,6 +114,7 @@ Frederick Van der Weel har den største diskontinuiteten av alle i sin z-verdi-g
     \includegraphics[width=\textwidth]{images/Gerit Pfuhl.png}
     \caption{z-verdier for Gerit Pfuhl}
 \end{figure}
+
 Gerit Pfuhl har klart å unngå diskontinuiteter i sin graf og har mange nullresultater. En forventet replikasjonsrate på 67\% er ganske grei. Man begynner dog å se konturene av en gausskurve i z-verdi-grafen hennes, noe som gjør at man kan begynne å lure på om det er nullhypotesen som er i grafen her.
 
 \subsection{Hermundur Sigmundsson}
@@ -112,6 +123,7 @@ Gerit Pfuhl har klart å unngå diskontinuiteter i sin graf og har mange nullres
     \includegraphics[width=\textwidth]{images/Hermundur Sigmundsson.png}
     \caption{z-verdier for Hermundur Sigmundsson}
 \end{figure}
+
 Hermundur Sigmundsson har noe diskontinuitet ved $z=1.96$, men det er også en god del nullresultater. Den forventede replikasjonsraten på 70\% er også ganske OK.
 
 \subsection{Ida Emilia Brunner}
@@ -120,6 +132,7 @@ Hermundur Sigmundsson har noe diskontinuitet ved $z=1.96$, men det er også en g
     \includegraphics[width=\textwidth]{images/Ida Emilia Brunner.png}
     \caption{z-verdier for Ida Emilia Brunner}
 \end{figure}
+
 Ida Emilia Brunner har en ganske høy forventet replikasjonsrate på 79\% og litt diskontinuitet ved $z=1.96$, men det er også en god del nullresultater.
 
 \subsection{Ingvild Saksvik-Lehouillier}
@@ -128,6 +141,7 @@ Ida Emilia Brunner har en ganske høy forventet replikasjonsrate på 79\% og lit
     \includegraphics[width=\textwidth]{images/Ingvild Saksvik-Lehouillier.png}
     \caption{z-verdier for Ingvild Saksvik-Lehouillier}
 \end{figure}
+
 Ingvild Saksvik-Lehouillier sin forsking vil replikeres i 84\% av tilfellene ifølge modellen, noe som er ganske bra. Skal sies at det er en viss diskontinuitet ved $z=1.96$, noe som gjør at det kan være noe p-hacking eller publiseringsbias.
 
 \subsection{Jolene Van der Kaap-Deeder}
@@ -136,6 +150,7 @@ Ingvild Saksvik-Lehouillier sin forsking vil replikeres i 84\% av tilfellene if�
     \includegraphics[width=\textwidth]{images/Jolene Van der Kaap-Deeder.png}
     \caption{z-verdier for Jolene Van der Kaap-Deeder}
 \end{figure}
+
 Jolene Van der Kaap-Deeder har en veldig gausskurve-form på funnene hennes på høyresiden av $z=1.96$, men denne stopper helt opp. Dette kan tyde på noe manglende nullresultater, men det er også en del nullresultater i grafen hennes. Den forventede replikasjonsraten på $64\%$ er noe lavt i forhold til andre her.
 
 \subsection{Lars Wichstrøm}
@@ -144,6 +159,7 @@ Jolene Van der Kaap-Deeder har en veldig gausskurve-form på funnene hennes på 
     \includegraphics[width=\textwidth]{images/Lars Wichstrøm.png}
     \caption{z-verdier for Lars Wichstrøm}
 \end{figure}
+
 Lars Wichstrøm har en helt OK z-verdi-graf. Ingen store diskontinuiteter og en replikasjonsrate på 71\%. Har med en grei andel nullresultater.
 
 \subsection{Leif Edward Ottesen Kennair}
@@ -152,6 +168,7 @@ Lars Wichstrøm har en helt OK z-verdi-graf. Ingen store diskontinuiteter og en 
     \includegraphics[width=\textwidth]{images/Leif Edward Ottesen Kennair.png}
     \caption{z-verdier for Leif Edward Ottesen Kennair}
 \end{figure}
+
 Leif Edward Ottesen Kennair har en viss diskontinuitet ved $z=1.96$, men den er ikke så stor. Likevel, hvis man ser på trenden på høyresiden av $z=1.96$ så kan man tro at det er en del manglende nullresultater her, siden trenden mistenkelig nok snur der den gjør. Forventet replikasjonsrate er på relativt greie 74\%. Så vidt under (men ikke signifikant forskjellig fra) hans store forbilde David M. Buss på 76\% \parencite{z-curve-david-buss}.
 
 \subsection{Magne Arve Flaten}
@@ -160,7 +177,8 @@ Leif Edward Ottesen Kennair har en viss diskontinuitet ved $z=1.96$, men den er 
     \includegraphics[width=\textwidth]{images/Magne Arve Flaten.png}
     \caption{z-verdier for Magne Arve Flaten}
 \end{figure}
-Magne Arve Flaten har en fin gausskurve i sin z-verdi-graf, bare at den er sentrert rundt $z \approx 2.3$ istedenfor $z = 0$ som ved nullhypotesen. Diskontinuiteten ved $z = 1.96$ er ikke så stor at noe nødvendigvis er galt her. I praksis er det to muligheter her; enten så er han veldig god på styrkeanalyse eller så er det noen manglende nullresultater her. Forventet replikasjonsrate er på 58\%, noe som ganske lavt i forhold til kollegaer.
+
+Magne Arve Flaten har en fin gausskurve i sin z-verdi-graf, bare at den er sentrert rundt $z \approx 2.3$ istedenfor $z = 0$ som ved nullhypotesen. Diskontinuiteten ved $z = 1.96$ er ikke så stor at noe nødvendigvis er galt her. I praksis er det to muligheter her; enten så er han veldig god på styrkeanalyse eller så er det noen manglende nullresultater her. Forventet replikasjonsrate er på 58\%, noe som er ganske lavt i forhold til kollegaer.
 
 \subsection{Magnus Alm}
 \begin{figure}[h!]
@@ -168,6 +186,7 @@ Magne Arve Flaten har en fin gausskurve i sin z-verdi-graf, bare at den er sentr
     \includegraphics[width=\textwidth]{images/Magnus Alm.png}
     \caption{z-verdier for Magnus Alm}
 \end{figure}
+
 Magnus Alm har en helt OK z-verdi-graf. Litt få z-verdier her, noe som gjør det vanskelig å si noe sikkert. Ingen store diskontinuiteter, og en ganske grei forventet replikasjonsrate på 67\%. En slags kontur av en gausskurve kan skimtes.
 
 \subsection{Matthias Mittner}
@@ -176,7 +195,8 @@ Magnus Alm har en helt OK z-verdi-graf. Litt få z-verdier her, noe som gjør de
     \includegraphics[width=\textwidth]{images/Matthias Mittner.png}
     \caption{z-verdier for Matthias Mittner}
 \end{figure}
-Matthias Mittner har en ganske flat z-verdi-graf. Ingen store diskontinuiteter, men kan se ut som nivået på nullresultater er noe lavere enn hos signifikante resultater. Mulig noen manglende nullresultater. Forventet replikasjonsrate er på 77\% som er ganske bra.
+
+Matthias Mittner har en ganske flat z-verdi-graf. Ingen store diskontinuiteter, men det kan se ut som nivået på nullresultater er noe lavere enn hos signifikante resultater. Mulig noen manglende nullresultater. Forventet replikasjonsrate er på 77\%, som er ganske bra.
 
 \subsection{Mons Bendixen}
 \begin{figure}[h!]
@@ -184,6 +204,7 @@ Matthias Mittner har en ganske flat z-verdi-graf. Ingen store diskontinuiteter, 
     \includegraphics[width=\textwidth]{images/Mons Bendixen.png}
     \caption{z-verdier for Mons Bendixen}
 \end{figure}
+
 Mons Bendixen har noe diskontinuitet ved $z=1.96$. På høyresiden av $z=1.96$ er det konturene til en gausskurve, men den forsvinner på venstresiden, noe som kan tyde på noen manglende nullresultater her. Forventet replikasjonsrate på 78\% må sies å være ganske bra.
 
 
@@ -193,6 +214,7 @@ Mons Bendixen har noe diskontinuitet ved $z=1.96$. På høyresiden av $z=1.96$ e
     \includegraphics[width=\textwidth]{images/Nicholas Hagen Kirkerud.png}
     \caption{z-verdier for Nicholas Hagen Kirkerud}
 \end{figure}
+
 Nicholas Haugen Kirkerud har en ganske flat z-verdi-graf, men ganske få z-verdier her, så det er vanskelig å si noe sikkert. Forventet replikasjonsrate på 90\% er veldig bra!
 
 \subsection{Nunne Englund}
@@ -201,6 +223,7 @@ Nicholas Haugen Kirkerud har en ganske flat z-verdi-graf, men ganske få z-verdi
     \includegraphics[width=\textwidth]{images/Nunne Englund.png}
     \caption{z-verdier for Nunne Englund}
 \end{figure}
+
 Nunne Englund har også en ganske flat z-verdi graf med få z-verdier, noe som skaper noe usikkerhet her. Skal sies at forventet replikasjonsrate er på veldig solide $89\%$!
 
 \subsection{Odin Hjemdal}
@@ -209,6 +232,7 @@ Nunne Englund har også en ganske flat z-verdi graf med få z-verdier, noe som s
     \includegraphics[width=\textwidth]{images/Odin Hjemdal.png}
     \caption{z-verdier for Odin Hjemdal}
 \end{figure}
+
 Odin Hjemdal har en grei replikasjonsrate på 79\%. Ingen store diskontinuiteter og grafen er relativt flat. Det skal sies at nivået på venstresiden av $z=1.96$ er noe lavere enn på høyresiden, noe som kan tyde på noen manglende nullresultater.
 
 \subsection{Patrick A. Vogel}
@@ -217,6 +241,7 @@ Odin Hjemdal har en grei replikasjonsrate på 79\%. Ingen store diskontinuiteter
     \includegraphics[width=\textwidth]{images/Patrick A. Vogel.png}
     \caption{z-verdier for Patrick A. Vogel}
 \end{figure}
+
 Patrick A. Vogel har ingen diskontinuitet ved $z=1.96$ og har en liten tendens til en gausskurve. Forventet replikasjonsrate på 64\% er noe lavt i forhold til andre her, men også lite som tyder på p-hacking/publiseringsbias.
 
 \subsection{Roger Hagen}
@@ -225,6 +250,7 @@ Patrick A. Vogel har ingen diskontinuitet ved $z=1.96$ og har en liten tendens t
     \includegraphics[width=\textwidth]{images/Roger Hagen.png}
     \caption{z-verdier for Roger Hagen}
 \end{figure}
+
 Roger Hagen har noe diskontinuitet ved $z=1.96$ som tyder på noen manglende nullresultater. Forventet replikasjonsgrad på 74\% er ganske grei.
 
 \subsection{Stian Solem}
@@ -233,6 +259,7 @@ Roger Hagen har noe diskontinuitet ved $z=1.96$ som tyder på noen manglende nul
     \includegraphics[width=\textwidth]{images/Stian Solem.png}
     \caption{z-verdier for Stian Solem}
 \end{figure}
+
 Stian Solem har en ganske god forventet replikasjonsrate på 81\% og heller ingen diskontinuiteter i grafen, noe som tyder på liten grad av p-hacking/publiseringsbias. Dog skal det sies at man ser en tendens til en gausskurve, noe som kan få en til å lure på i hvilken grad det er nullhypotesen vi ser grafen til her.
 
 \subsection{Tilmann von Soest}
@@ -241,6 +268,7 @@ Stian Solem har en ganske god forventet replikasjonsrate på 81\% og heller inge
     \includegraphics[width=\textwidth]{images/Tilmann von Soest.png}
     \caption{z-verdier for Tilmann von Soest}
 \end{figure}
+
 Tilmann von Soest har noe diskontinuitet ved $z=1.96$, der man ser konturene til en gausskurve på høyresiden av $z=1.96$, men denne forsvinner helt på venstresiden. Dette kan tyde på noe manglende nullresultater. Den forventede replikasjonsgraden på 69\% er ganske grei.
 
 \subsection{Timo Juhani Lajunen}
@@ -249,6 +277,7 @@ Tilmann von Soest har noe diskontinuitet ved $z=1.96$, der man ser konturene til
     \includegraphics[width=\textwidth]{images/Timo Juhani Lajunen.png}
     \caption{z-verdier for Timo Juhani Lajunen}
 \end{figure}
+
 Timo Juhani Lajunen har en forventet replikasjonsrate på 71\%, noe som er ganske OK. Når det kommer til diskontinuiteter, er diskontinuiteten ganske stor ved $z=1.96$. Man ser konturene til en gausskurve på høyre side av $z=1.96$, men ingenting slikt på venstresiden av grafen. Det kan tyde på en del manglende nullresultater, og man kan spørre seg om man bare ser nullhypotesen og publiseringsbias her.
 
 \subsection{Tor Sunde}
@@ -257,6 +286,7 @@ Timo Juhani Lajunen har en forventet replikasjonsrate på 71\%, noe som er gansk
     \includegraphics[width=\textwidth]{images/Tor Sunde.png}
     \caption{z-verdier for Tor Sunde}
 \end{figure}
+
 Man ser ingen diskontinuitet i grafen til Tor Sunde, noe som tyder på liten grad av p-hacking/publiseringsbias. Forventet replikasjonsrate på $63\%$ er litt lavt, dog.
 
 \subsection{Torbjørn Rundmo}
@@ -265,6 +295,7 @@ Man ser ingen diskontinuitet i grafen til Tor Sunde, noe som tyder på liten gra
     \includegraphics[width=\textwidth]{images/Torbjørn Rundmo.png}
     \caption{z-verdier for Torbjørn Rundmo}
 \end{figure}
+
 Torbjørn Rundmo har en av de største diskontinuitetene vi har sett ved $z=1.96$ (kun slått at Frederikus Van der Weel), med mange manglende nullresultater. Mens 94\% av hans publiserte resultater var signifikante, antar modellen at kun 25\% av de faktisk utførte forsøkene var signifikante (et ganske stort konfidensintervall på sistnevnte, vel og merke). Det skal til slutt sies at han har en forventet replikasjonsrate på 81\%, noe som er ganske bra.
 
 \subsection{Tore C Stiles}
@@ -273,7 +304,8 @@ Torbjørn Rundmo har en av de største diskontinuitetene vi har sett ved $z=1.96
     \includegraphics[width=\textwidth]{images/Tore C Stiles.png}
     \caption{z-verdier for Tore C Stiles}
 \end{figure}
-Tore C Stiles har en litt lav forventet replikasjonsrate på 65\%. Det er også noe diskontinuitet ved $z=1.96$ på den måten at det er en trendendring der. Det kan være at det skyldes manglende resultater, men kan også være at det skyldes god styrkeanalyse.
+
+Tore C Stiles har en litt lav forventet replikasjonsrate på 65\%. Det er også noe diskontinuitet ved $z=1.96$ på den måten at det er en trendendring der. Det kan skyldes manglende resultater, men det kan også være at det skyldes god styrkeanalyse.
 
 \subsection{Torun Grøtte}
 \begin{figure}[h!]
@@ -281,6 +313,7 @@ Tore C Stiles har en litt lav forventet replikasjonsrate på 65\%. Det er også 
     \includegraphics[width=\textwidth]{images/Torun Grøtte.png}
     \caption{z-verdier for Torun Grøtte}
 \end{figure}
+
 Torun Grøtte har ingen diskontinuiteter i grafen og en god del publiserte nullresultater. På en annen side er den forventede replikasjonsraten på 55\% ganske lav i forhold til kollegaer.
 
 \subsection{Trond Nordfjærn}
@@ -289,6 +322,7 @@ Torun Grøtte har ingen diskontinuiteter i grafen og en god del publiserte nullr
     \includegraphics[width=\textwidth]{images/Trond Nordfjærn.png}
     \caption{z-verdier for Trond Nordfjærn}
 \end{figure}
+
 Trond Nordfjærn har lite diskontinuitet i grafen sin og en ganske god forventet replikasjonsrate på 84\%.
 
 \subsection{Trond Viggo Grøntvedt}
@@ -297,6 +331,7 @@ Trond Nordfjærn har lite diskontinuitet i grafen sin og en ganske god forventet
     \includegraphics[width=\textwidth]{images/Trond Viggo Grøntvedt.png}
     \caption{z-verdier for Trond Viggo Grøntvedt}
 \end{figure}
+
 Trond Viggo Grøntvedt har en ganske grei forventet replikasjonsrate på 67\% og en god del publiserte nullresultater. Likevel er det en viss diskontinuitet ved $z=1.96$ ved at trenden snur, noe som kan tyde på noen manglende nullresultater.
 
 \subsection{Ute Gabriel}
@@ -305,6 +340,7 @@ Trond Viggo Grøntvedt har en ganske grei forventet replikasjonsrate på 67\% og
     \includegraphics[width=\textwidth]{images/Ute Gabriel.png}
     \caption{z-verdier for Ute Gabriel}
 \end{figure}
+
 Ute Gabriel har en relativt flat graf, og ingen synlig diskontinuitet. Forventet replikasjonsrate på 76\% er også ganske bra.
 
 \subsection{Vera Skalicka}
@@ -313,7 +349,8 @@ Ute Gabriel har en relativt flat graf, og ingen synlig diskontinuitet. Forventet
     \includegraphics[width=\textwidth]{images/Vera Skalicka.png}
     \caption{z-verdier for Vera Skalicka}
 \end{figure}
-Vera Skalicka har ikke så mange resultater så vanskelig å si så mye ut fra grafen. Er en god del nullresultater, så lite tyder på p-hacking eller publikasjonsbias. En forventet replikasjonsrate på 65\% er ganske OK.
+
+Vera Skalicka har ikke så mange resultater, så det er vanskelig å si så mye ut fra grafen. Er en god del nullresultater, så lite tyder på p-hacking eller publikasjonsbias. En forventet replikasjonsrate på 65\% er ganske OK.
 
 \subsection{Xi Chu}
 \begin{figure}[h!]
@@ -321,10 +358,11 @@ Vera Skalicka har ikke så mange resultater så vanskelig å si så mye ut fra g
     \includegraphics[width=\textwidth]{images/Xi Chu.png}
     \caption{z-verdier for Xi Chu}
 \end{figure}
+
 Xi Chu har en noe lav forventet replikasjonsrate på 63\%. Det er noe diskontinuitet ved $z=1.96$, selv om det også er publisert en god del nullresultater.
 
 \subsection{En kommentar om forventet replikasjonsrate}
-Som vi så i første avsnitt er den empiriske replikasjonsraten i psykologi lav (et sted rundt 50\% eller mindre). Likevel har de aller fleste som er nevnt ovenfor her en forventet replikasjonsrate på greit over 50\%! Derfor kan det være verdt å merke seg at sammenligning mellom forventet replikasjonsrate og empirisk replikasjonsrate tilsier at forventet replikasjonsrate slik som den er regnet ut her er ofte høyere enn replikasjonsraten i praksis, så det er fort at forskerne over vil replikeres sjeldnere enn det forventet replikasjonsrate over tilsier \parencite{z-curve-implementasjon, z-curve-mot-empiri}. \textcite{arp} bruker et gjennomsnitt mellom ERR og EDR kalt \guillemetleft Actual Replicability Prediction\guillemetright\ (ARP) som sin beste prediksjon på utfall av replikasjonsstudier. Som man kan se fra grafene over vil ARP være noe lavere enn ERR som er brukt som forventet replikasjonsrate i denne artikkelen.
+Som vi så i første avsnitt er den empiriske replikasjonsraten i psykologi lav (et sted rundt 50\% eller mindre). Likevel har de aller fleste som er nevnt ovenfor her en forventet replikasjonsrate på greit over 50\%! Derfor kan det være verdt å merke seg at sammenligning mellom forventet replikasjonsrate og empirisk replikasjonsrate tilsier at forventet replikasjonsrate slik som den er regnet ut her, ofte er høyere enn replikasjonsraten i praksis. Derfor er det er fort slik at forskerne over vil replikeres sjeldnere enn det forventet replikasjonsrate over tilsier \parencite{z-curve-implementasjon, z-curve-mot-empiri}. \textcite{arp} bruker et gjennomsnitt mellom ERR og EDR kalt \guillemetleft Actual Replicability Prediction\guillemetright\ (ARP) som sin beste prediksjon på utfall av replikasjonsstudier. Som man kan se fra grafene over vil ARP være noe lavere enn ERR som er brukt som forventet replikasjonsrate i denne artikkelen.
 
 \subsection{Så hvem vant?}
 Det var mange her som har gjort en god innsats i å skulle bli instituttets beste p-hacker. Likevel var det ingen som hadde en så god diskontinuitet på $z=1.96$ som Frederikus Van der Weel. Han vant dermed konkurransen om å være instituttets beste p-hacker. Gratulerer!
