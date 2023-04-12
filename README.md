@@ -13,11 +13,11 @@ For å finne artikler som tilhører Institutt for Psykologi, brukes Cristin APIe
 
 ## Laste ned artikler
 
-Denne funksjonaliteten er med vilje ikke lagt ved siden det kommer helt an på hvordan man har tilgang til artikler. Implementasjonen antar at man har en fil `Downloader/downloader.py` som har en funksjon `download_papers_from_doi_links` tar inn en liste med DOI-linker og en lokasjon for å lagre PDFer av artiklene, og deretter laster ned artiklene til det stedet. Som du kan se er `downloader.py` i `.gitignore`.
+Denne funksjonaliteten er med vilje ikke lagt ved siden det kommer helt an på hvordan man har tilgang til artikler. Implementasjonen antar at man har en fil `Downloader/downloader.py` som har en funksjon `download_papers_from_doi_links` tar inn en liste med DOI-linker og en lokasjon for å lagre PDFer av artiklene, og deretter laster ned artiklene til den lokasjonen. Som du kan se er `downloader.py` i `.gitignore`.
 
 ## Konvertering av PDF artikler
 
-Når PDFene er lastet ned kan man kjøre CERMINE på artiklene for å konvertere dem til `.cermxml`. For enkelthetsskyld har jeg lagt ved et Python-skript `cermine_runner.py` for å kjøre CERMINE riktige fillokasjoner. Merk at man må ha en gyldig Java-installasjon for at CERMINE skal kjøre.
+Når PDFene er lastet ned kan man kjøre CERMINE på artiklene for å konvertere dem til `.cermxml`. For enkelthetsskyld har jeg lagt ved et Python-skript `cermine_runner.py` for å kjøre CERMINE på riktige fillokasjoner. Merk at man må ha en gyldig Java-installasjon for at CERMINE skal kjøre.
 
 ## Generering av grafer og uthenting av statistikk
 
